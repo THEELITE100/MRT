@@ -13,7 +13,7 @@ export const site = {
     email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "reynoldmaya@gmail.com",
     phone: process.env.NEXT_PUBLIC_CONTACT_PHONE ?? "+1 7548610560",
   },
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://mrt-dusky.vercel.app/",
 } as const;
 
 export const fullAddress = `${site.address.street}, ${site.address.city}, ${site.address.region} ${site.address.zip}`;
