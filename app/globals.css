@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/*
+  THEME — change the whole site's look from here.
+  Palette is pulled from Dr. Reynolds' actual office photos:
+  gray-blue upholstery, olive greens, teal accents, warm brick.
+*/
+@theme {
+  /* Primary: deep sea-glass teal (echoes the teal vase + coastal art in the office) */
+  --color-primary: #1f4b4a;
+  --color-primary-dark: #143534;
+  /* Secondary: cool sea-mist neutrals (echoes the gray sofas and white walls) */
+  --color-mist: #edf1ef;
+  --color-sage: #d9e3de;
+  --color-paper: #f8faf9;
+  /* Accent: brick (the exposed brick in the office) + soft blush (the pink beach print) */
+  --color-accent: #9a4630;
+  --color-blush: #ebd9d2;
+  /* Text */
+  --color-ink: #1b2a29;
+  --color-muted: #4a5b59;
+
+  --font-display: "Newsreader Variable", "Newsreader", Georgia, serif;
+  --font-sans: "Hanken Grotesk Variable", "Hanken Grotesk", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    background-color: var(--color-mist);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 450;
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    * {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
