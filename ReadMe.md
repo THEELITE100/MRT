@@ -6,7 +6,7 @@ The layout and section order are modeled on an existing counseling-practice temp
 
 > **Note:** Dr. Maya Reynolds is a fictional therapist. This is a demonstration project, and the address, credentials, and practice details are illustrative.
 
-**Live site:** [your-deployment.vercel.app](https://your-deployment.vercel.app)  ·  
+**Live site:** https://mrt-dusky.vercel.app/ ·  
 
 
 ## Overview
