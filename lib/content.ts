@@ -231,5 +231,4 @@ export const footer = {
     "Anxiety, trauma, and burnout therapy for adults in Santa Monica, CA, in person or by secure telehealth across California.",
   service:
     "In-person sessions in Santa Monica, CA 90401. Secure telehealth for clients located anywhere in California.",
-  legal: "Demo website. Dr. Maya Reynolds is a fictional therapist.",
 };

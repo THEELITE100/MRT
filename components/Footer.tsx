@@ -52,7 +52,6 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col gap-2 border-t border-paper/15 py-6 text-sm text-paper/60 md:flex-row md:justify-between">
           <p>© {new Date().getFullYear()} {site.name}</p>
-          <p>{footer.legal}</p>
         </div>
       </Container>
     </footer>
